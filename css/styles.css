@@ -1,0 +1,173 @@
+*, ::before, ::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul, ol {
+	margin: 0;
+}
+
+li {
+	margin: 0;
+	list-style-type: none;
+}
+
+body,html {
+	margin: 0;
+	font-family: 'Open Sans';
+
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.header {
+	min-height: 80vh;
+	background-image: url(../pictures/FullSizeRender-12-07-19-01-25-7.jpg);
+	background-color: #000;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	position: relative;
+	padding-top: 30px;
+	padding-right: 10vw;
+	padding-left: 10vw;
+	padding-bottom: 30px;
+}
+
+.header::after {
+	content: '';
+	position: absolute;
+
+	background-color: #000;
+	opacity: 0.4;
+
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.menu {
+	position: relative;
+	z-index: 1;
+	text-transform: uppercase;
+}
+
+.menu__list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding-left: 0;
+}
+
+.menu__item {
+	margin-right: 30px;
+	margin-left: 0;
+}
+
+.menu__list :last-child {
+	margin-right: 0;
+}
+
+.header__h {
+	z-index: 1;
+	position: relative;
+
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 25vh;
+}
+
+.header__text {
+	font-size: 16px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 5vh;
+}
+
+.header__button {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	border: 1px solid #fff;
+
+	position: relative;
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+@media (max-width: 600px) {
+
+	.header {
+		min-height: 100vh;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.header__h {
+		font-size: 32px;
+		margin-top: 20vh;
+	}
+
+	.header__text {
+		font-size: 16px;
+	}
+
+	.header__button {
+		height: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 15px;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1200px){
+	.header__h {
+		font-size: 40px;
+	}
+
+	.header__text {
+		font-size: 20px;
+	}
+
+	.header__button {
+		width: 200px;
+		height: 50px;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 25px;
+	}
+}
+
+@media (min-width: 1201px) {
+	.header__h {
+		font-size: 60px;
+	}
+
+	.header__text {
+		font-size: 30px;
+	}
+
+	.header__button {
+		width: 200px;
+		height: 50px;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 25px;
+	}
+}
