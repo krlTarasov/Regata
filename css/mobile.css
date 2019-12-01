@@ -1,0 +1,37 @@
+@media (max-width: 600px) {
+
+	html {
+		font-size: 12px;
+	}
+
+	.header {
+		min-height: 100vh;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.header__h {
+		margin-top: 20vh;
+	}
+
+	.header__button {
+		height: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		border-radius: 15px;
+	}
+
+	
+
+	.section__item {
+		flex-direction: column;
+	}
+
+	.article__img {
+		order: -1;
+		object-fit: cover;
+		height: 300px;
+	}
+}

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Регата</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/tablet.css">
+	<link rel="stylesheet" href="css/desktop.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
 	<header class="header">
 		<nav class="menu">
@@ -20,11 +25,119 @@
 		</nav>
 
 		<h1 class="header__h">Яхтенные походы для молодежи и студентов: из теории в море.</h1>
-		<div class="header__text">Турецкое средиземноморье - живописный уголок мира, комфортный для начинающих и опытных яхтсменов.</div>
+		<div class="header__text">Турецкое средиземноморье - живописный уголок мира, комфортный для начинающих и опытных
+			яхтсменов.</div>
 
 		<a href="" class="header__button">Записаться</a>
 	</header>
 
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<main class="main">
+		<section class="routs">
+			<h2 class="routs__header section__header">
+				Маршруты:
+			</h2>
+
+			<article class="routs__item section__item routs__item1">
+				<div class="article__content">
+					<h3 class="article__header">
+						Мармарис
+					</h3>
+					<div class="article__text">
+						Один из лучших курортов Турции и признанный центр парусного спорта восточного Средиземноморья.
+					</div>
+					<button class="article__button">Подробнее</button>
+				</div>
+
+
+				<img src="pictures/FullSizeRender-12-07-19-01-25-3.jpg" alt="" class="article__img marmaris__img">
+
+				<div class="program">
+					<div class='program__route'>
+
+						<iframe
+							src="https://yandex.ru/map-widget/v1/?um=constructor%3A82b527e69d9e2fb46ef46741774eae8fa71719a2919a3fada49886bbeb3bee8e&amp;source=constructor"
+							frameborder="0" class="program__iframe"></iframe>
+
+						<ul class="route__list">
+							<li class="route__list__item">Мармарис</li>
+							<li class="route__list__item">Чифтлик</li>
+							<li class="route__list__item">Базуккале</li>
+							<li class="route__list__item">Силимие</li>
+							<li class="route__list__item">Орхание</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+
+			<article class="routs__item section__item routs__item2">
+				<div class="article__content">
+					<h3 class="article__header">
+						Фетхие
+					</h3>
+					<div class="article__text">
+						Фетхие - дюжина островов, рассыпанных в заливе, словно жемчужины, окружают Фетхие, придавая его
+						побережью милый уют и обеспечивая отличное укрытие для яхт.
+					</div>
+					<button class="article__button">Подробнее</button>
+				</div>
+
+				<img src="pictures/FullSizeRender-12-07-19-01-25-4.jpg" alt="" class="article__img marmaris__img">
+
+				<div class="program">
+					<div class='program__route'>
+						<iframe
+							src="https://yandex.ru/map-widget/v1/?um=constructor%3A82b527e69d9e2fb46ef46741774eae8fa71719a2919a3fada49886bbeb3bee8e&amp;source=constructor"
+							frameborder="0" class="program__iframe"></iframe>
+						<ul class="route__list">
+							<li class="route__list__item">Мармарис</li>
+							<li class="route__list__item">Чифтлик</li>
+							<li class="route__list__item">Базуккале</li>
+							<li class="route__list__item">Силимие</li>
+							<li class="route__list__item">Орхание</li>
+						</ul>
+					</div>
+
+				</div>
+			</article>
+
+
+
+			<article class="routs__item section__item routs__item3">
+				<div class="article__content">
+					<h3 class="article__header">
+						Геджек
+					</h3>
+					<div class="article__text">
+						Гёджек - особая атмосфера для всех, кто не представляет свою жизнь без моря, яхт, новых открытий
+						и путешествий.
+					</div>
+
+					<button class="article__button">Подробнее</button>
+				</div>
+
+
+				<img src="pictures/FullSizeRender-12-07-19-01-25-7.jpg" alt="" class="article__img marmaris__img">
+
+				<div class="program">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A82b527e69d9e2fb46ef46741774eae8fa71719a2919a3fada49886bbeb3bee8e&amp;source=constructor"
+						frameborder="0" class="program__iframe"></iframe>
+					<div class='program__route'>
+						<ul class="route__list">
+							<li class="route__list__item">Мармарис</li>
+							<li class="route__list__item">Чифтлик</li>
+							<li class="route__list__item">Базуккале</li>
+							<li class="route__list__item">Силимие</li>
+							<li class="route__list__item">Орхание</li>
+						</ul>
+					</div>
+			</article>
+
+			</div>
+		</section>
+	</main>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
